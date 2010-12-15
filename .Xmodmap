@@ -1,0 +1,21 @@
+! Windows keys are useless by default. This is useful on norwegian
+!  layouts.
+keycode 133 = bracketleft braceleft parenleft
+keycode 134 = bracketright braceright parenright
+
+! Caps lock is really useless. Also, Ctrl is too important to have at
+!  the key marked "ctrl"
+clear Lock
+clear Control
+remove Control = Hyper_L
+
+! Life not worth living without Hyper_L on "ctrl", and Control_L on
+! "caps lock"
+keycode 37 = Hyper_L
+keycode 66 = Control_L slash equal 223
+
+add Control = Control_L
+add Control = Control_R
+
+clear Mod4
+add Mod4 = Hyper_L
