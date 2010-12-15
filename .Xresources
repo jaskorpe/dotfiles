@@ -1,0 +1,26 @@
+xterm*background:       white
+xterm*foreground:       black
+xterm*titeInhibit:      true
+xterm.*.backarrowKey: false
+xterm*metaSendsEscape: true
+xterm*scrollTtyOutput:  false
+
+xterm*utf8: 1
+xterm.VT100.charClass:33:48,35-37:48,43:48,45-47:48,64:48,126:48,58:48,63:48,61:48,38:48
+xterm*sessionMgt: false 
+
+
+*ttyModes:         erase ^?
+*VT100.Translations: \
+        #override <Key>BackSpace: string(0x7f) \n\
+		  <Key>Delete:    string(0x1b) string("[3~") \n
+
+xpdf*enableFreetype:    yes
+xpdf*antialias:         yes
+xpdf*foreground:        black
+xpdf*background:        grey
+xpdf*urlCommand:        /usr/bin/firefox %s
+
+Emacs.menuBar: off
+Emacs.verticalScrollBars: off
+Emacs.toolBar: off
