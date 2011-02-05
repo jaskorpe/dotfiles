@@ -21,8 +21,8 @@
 (define-key *root-map* (kbd "e") "exec emacs23")
 (define-key *root-map* (kbd "j") "exec '/home/jaskorpe/.wine/drive_c/Program Files/Spotify/spotify.exe'")
 
-(define-key *root-map* (kbd "f") "firefox")
-(define-key *root-map* (kbd "C-f") "firefox")
+(define-key *root-map* (kbd "f") "exec firefox")
+(define-key *root-map* (kbd "C-f") "exec firefox")
 
 (define-key *root-map* (kbd "l") "exec xscreensaver-command -lock")
 (define-key *root-map* (kbd "C-l") "exec xscreensaver-command -lock")
@@ -44,7 +44,7 @@
 (define-key *top-map* (kbd "F20") "exec xbacklight -inc 5%")
 
 
-(define-key *top-map* (kbd "H-plus") "exec nad_client corpus 1234 0")
-(define-key *top-map* (kbd "H-minus") "exec nad_client corpus 1234 1")
+(define-key *top-map* (kbd "H-plus") "exec amixer set Master 2dB+")
+(define-key *top-map* (kbd "H-minus") "exec amixer set Master 2dB-")
 (define-key *top-map* (kbd "H-m") "exec nad_client corpus 1234 2")
 (define-key *top-map* (kbd "H-n") "exec nad_client corpus 1234 3")
